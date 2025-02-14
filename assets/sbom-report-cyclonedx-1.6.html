@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SBOM Dependency Report</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <!--
+            # sbom-to-html © 2025 by Juan C Calderon 
+            # Licensed under CC BY 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/
+            # This license requires that reusers give credit to the creator. It allows reusers to distribute, 
+            # remix, adapt, and build upon the material in any medium or format, even for commercial purposes.
+        -->
+        <base target="_blank">
+
+        <style>
+            .container-fluid {
+                max-width: 90%
+            }
+            .header {
+                background-color: DarkSlateBlue;
+                color:white;
+            }
+            @media print {
+               .page-break {page-break-before: always;}
+            }
+        </style>
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="header rounded">
+                <div class="row p-5 py-4">
+                    <div class="col">
+                        <h2>Software Bill of Materials (SBOM) </h2>
+                        <h4>com.jcmaxsec.testapp:main-app - 0.0.0-SNAPSHOT</h4>
+                    </div>
+                </div>
+                <div class="row px-5 pb-5">
+                    <div class="col">
+                        <div><b> 16</b> dependencies found</div>
+                    </div>
+                    <div class="col text-end">
+                        <div>Scan Date: Feb 16 2025, 12:13:52 PM Central Standard Time (Mexico)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-5">
+            <table class="table table-bordered table-striped table-sm">
+                <tr>
+                    <th>Name</th>
+                    <th>Version</th>
+                    <th>License</th>
+                    <th>Package URL</th>
+                    <th>Depends On</th>
+                </tr>
+
+                
+            <tr>
+                <td>com.jcmaxsec.testapp:main-app</td>
+                <td>0.0.0-SNAPSHOT</td>
+                <td></td>
+                <td><a href='pkg:maven/com.jcmaxsec.testapp/main-app@0.0.0-SNAPSHOT' target='_blank'>pkg:maven/com.jcmaxsec.testapp/main-app@0.0.0-SNAPSHOT</a></td>
+                <td><ul><li>org.springframework.boot:spring-boot-starter@3.3.3</li><li>org.springframework.boot:spring-boot-starter-aop@3.3.3</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>org.springframework.boot:spring-boot-starter</td>
+                <td>3.3.3</td>
+                <td>Apache-2.0</td>
+                <td><a href='pkg:maven/org.springframework.boot/spring-boot-starter@3.3.3' target='_blank'>pkg:maven/org.springframework.boot/spring-boot-starter@3.3.3</a></td>
+                <td><ul><li>org.springframework.boot:spring-boot@3.3.3</li><li>org.springframework.boot:spring-boot-autoconfigure@3.3.3</li><li>jakarta.annotation:jakarta.annotation-api@2.1.1</li><li>org.springframework:spring-core@6.1.12</li><li>org.yaml:snakeyaml@2.2</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>org.springframework.boot:spring-boot-starter-aop</td>
+                <td>3.3.3</td>
+                <td>Apache-2.0</td>
+                <td><a href='pkg:maven/org.springframework.boot/spring-boot-starter-aop@3.3.3' target='_blank'>pkg:maven/org.springframework.boot/spring-boot-starter-aop@3.3.3</a></td>
+                <td><ul><li>org.springframework.boot:spring-boot-starter@3.3.3</li><li>org.springframework:spring-aop@6.1.12</li><li>org.aspectj:aspectjweaver@1.9.22.1</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>org.springframework.boot:spring-boot</td>
+                <td>3.3.3</td>
+                <td>Apache-2.0</td>
+                <td><a href='pkg:maven/org.springframework.boot/spring-boot@3.3.3' target='_blank'>pkg:maven/org.springframework.boot/spring-boot@3.3.3</a></td>
+                <td><ul><li>org.springframework:spring-core@6.1.12</li><li>org.springframework:spring-context@6.1.12</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>org.springframework.boot:spring-boot-autoconfigure</td>
+                <td>3.3.3</td>
+                <td>Apache-2.0</td>
+                <td><a href='pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.3.3' target='_blank'>pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.3.3</a></td>
+                <td><ul><li>org.springframework.boot:spring-boot@3.3.3</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>jakarta.annotation:jakarta.annotation-api</td>
+                <td>2.1.1</td>
+                <td>(EPL-2.0 OR GPL-2.0-with-classpath-exception)</td>
+                <td><a href='pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1' target='_blank'>pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1</a></td>
+                <td><ul></ul></td>
+            </tr>
+        
+            <tr>
+                <td>org.springframework:spring-core</td>
+                <td>6.1.12</td>
+                <td>Apache-2.0</td>
+                <td><a href='pkg:maven/org.springframework/spring-core@6.1.12' target='_blank'>pkg:maven/org.springframework/spring-core@6.1.12</a></td>
+                <td><ul><li>org.springframework:spring-jcl@6.1.12</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>org.yaml:snakeyaml</td>
+                <td>2.2</td>
+                <td>Apache-2.0</td>
+                <td><a href='pkg:maven/org.yaml/snakeyaml@2.2' target='_blank'>pkg:maven/org.yaml/snakeyaml@2.2</a></td>
+                <td><ul></ul></td>
+            </tr>
+        
+            <tr>
+                <td>org.springframework:spring-aop</td>
+                <td>6.1.12</td>
+                <td>Apache-2.0</td>
+                <td><a href='pkg:maven/org.springframework/spring-aop@6.1.12' target='_blank'>pkg:maven/org.springframework/spring-aop@6.1.12</a></td>
+                <td><ul><li>org.springframework:spring-beans@6.1.12</li><li>org.springframework:spring-core@6.1.12</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>org.aspectj:aspectjweaver</td>
+                <td>1.9.22.1</td>
+                <td>EPL-1.0</td>
+                <td><a href='pkg:maven/org.aspectj/aspectjweaver@1.9.22.1' target='_blank'>pkg:maven/org.aspectj/aspectjweaver@1.9.22.1</a></td>
+                <td><ul></ul></td>
+            </tr>
+        
+            <tr>
+                <td>org.springframework:spring-context</td>
+                <td>6.1.12</td>
+                <td>Apache-2.0</td>
+                <td><a href='pkg:maven/org.springframework/spring-context@6.1.12' target='_blank'>pkg:maven/org.springframework/spring-context@6.1.12</a></td>
+                <td><ul><li>org.springframework:spring-aop@6.1.12</li><li>org.springframework:spring-beans@6.1.12</li><li>org.springframework:spring-core@6.1.12</li><li>org.springframework:spring-expression@6.1.12</li><li>io.micrometer:micrometer-observation@1.13.3</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>org.springframework:spring-jcl</td>
+                <td>6.1.12</td>
+                <td>Apache-2.0</td>
+                <td><a href='pkg:maven/org.springframework/spring-jcl@6.1.12' target='_blank'>pkg:maven/org.springframework/spring-jcl@6.1.12</a></td>
+                <td><ul></ul></td>
+            </tr>
+        
+            <tr>
+                <td>org.springframework:spring-beans</td>
+                <td>6.1.12</td>
+                <td>Apache-2.0</td>
+                <td><a href='pkg:maven/org.springframework/spring-beans@6.1.12' target='_blank'>pkg:maven/org.springframework/spring-beans@6.1.12</a></td>
+                <td><ul><li>org.springframework:spring-core@6.1.12</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>org.springframework:spring-expression</td>
+                <td>6.1.12</td>
+                <td>Apache-2.0</td>
+                <td><a href='pkg:maven/org.springframework/spring-expression@6.1.12' target='_blank'>pkg:maven/org.springframework/spring-expression@6.1.12</a></td>
+                <td><ul><li>org.springframework:spring-core@6.1.12</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>io.micrometer:micrometer-observation</td>
+                <td>1.13.3</td>
+                <td>Apache-2.0</td>
+                <td><a href='pkg:maven/io.micrometer/micrometer-observation@1.13.3' target='_blank'>pkg:maven/io.micrometer/micrometer-observation@1.13.3</a></td>
+                <td><ul><li>io.micrometer:micrometer-commons@1.13.3</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>io.micrometer:micrometer-commons</td>
+                <td>1.13.3</td>
+                <td>Apache-2.0</td>
+                <td><a href='pkg:maven/io.micrometer/micrometer-commons@1.13.3' target='_blank'>pkg:maven/io.micrometer/micrometer-commons@1.13.3</a></td>
+                <td><ul></ul></td>
+            </tr>
+        
+
+            </table>
+        </div>
+        <div class="page-break">
+            <h2>Dependency Relationship Diagram</h2>
+			<div class="text-center">
+            <svg id="diagram"></svg>
+			</div>
+        </div>
+    </div>
+        <script>
+            var data = [{'source':'com.jcmaxsec.testapp:main-app', 'target':'org.springframework.boot:spring-boot-starter@3.3.3', 'value':'1'},
+{'source':'com.jcmaxsec.testapp:main-app', 'target':'org.springframework.boot:spring-boot-starter-aop@3.3.3', 'value':'1'},
+{'source':'org.springframework.boot:spring-boot-starter', 'target':'org.springframework.boot:spring-boot@3.3.3', 'value':'1'},
+{'source':'org.springframework.boot:spring-boot-starter', 'target':'org.springframework.boot:spring-boot-autoconfigure@3.3.3', 'value':'1'},
+{'source':'org.springframework.boot:spring-boot-starter', 'target':'jakarta.annotation:jakarta.annotation-api@2.1.1', 'value':'1'},
+{'source':'org.springframework.boot:spring-boot-starter', 'target':'org.springframework:spring-core@6.1.12', 'value':'1'},
+{'source':'org.springframework.boot:spring-boot-starter', 'target':'org.yaml:snakeyaml@2.2', 'value':'1'},
+{'source':'org.springframework.boot:spring-boot-starter-aop', 'target':'org.springframework.boot:spring-boot-starter@3.3.3', 'value':'1'},
+{'source':'org.springframework.boot:spring-boot-starter-aop', 'target':'org.springframework:spring-aop@6.1.12', 'value':'1'},
+{'source':'org.springframework.boot:spring-boot-starter-aop', 'target':'org.aspectj:aspectjweaver@1.9.22.1', 'value':'1'},
+{'source':'org.springframework.boot:spring-boot', 'target':'org.springframework:spring-core@6.1.12', 'value':'1'},
+{'source':'org.springframework.boot:spring-boot', 'target':'org.springframework:spring-context@6.1.12', 'value':'1'},
+{'source':'org.springframework.boot:spring-boot-autoconfigure', 'target':'org.springframework.boot:spring-boot@3.3.3', 'value':'1'},
+{'source':'org.springframework:spring-core', 'target':'org.springframework:spring-jcl@6.1.12', 'value':'1'},
+{'source':'org.springframework:spring-aop', 'target':'org.springframework:spring-beans@6.1.12', 'value':'1'},
+{'source':'org.springframework:spring-aop', 'target':'org.springframework:spring-core@6.1.12', 'value':'1'},
+{'source':'org.springframework:spring-context', 'target':'org.springframework:spring-aop@6.1.12', 'value':'1'},
+{'source':'org.springframework:spring-context', 'target':'org.springframework:spring-beans@6.1.12', 'value':'1'},
+{'source':'org.springframework:spring-context', 'target':'org.springframework:spring-core@6.1.12', 'value':'1'},
+{'source':'org.springframework:spring-context', 'target':'org.springframework:spring-expression@6.1.12', 'value':'1'},
+{'source':'org.springframework:spring-context', 'target':'io.micrometer:micrometer-observation@1.13.3', 'value':'1'},
+{'source':'org.springframework:spring-beans', 'target':'org.springframework:spring-core@6.1.12', 'value':'1'},
+{'source':'org.springframework:spring-expression', 'target':'org.springframework:spring-core@6.1.12', 'value':'1'},
+{'source':'io.micrometer:micrometer-observation', 'target':'io.micrometer:micrometer-commons@1.13.3', 'value':'1'},
+];
+            const width = 600;
+            const height = width;
+            const innerRadius = Math.min(width, height) * 0.5 - 100;
+            const outerRadius = innerRadius + 10;
+
+            // Compute a dense matrix from the weighted links in data.
+            const names = d3.sort(d3.union(data.map(d => d.source), data.map(d => d.target)));
+            const index = new Map(names.map((name, i) => [name, i]));
+            const matrix = Array.from(index, () => new Array(names.length).fill(0));
+            for (const { source, target, value } of data) matrix[index.get(source)][index.get(target)] += value;
+
+            const chord = d3.chordDirected()
+                .padAngle(10 / innerRadius)
+                .sortSubgroups(d3.descending)
+                .sortChords(d3.descending);
+
+            const arc = d3.arc()
+                .innerRadius(innerRadius)
+                .outerRadius(outerRadius);
+
+            const ribbon = d3.ribbonArrow()
+                .radius(innerRadius - 1)
+                .padAngle(1 / innerRadius);
+
+            const colors = d3.quantize(d3.interpolateRainbow, names.length);
+
+            const svg = d3.select("svg#diagram")
+                .attr("width", width)
+                .attr("height", height)
+                .attr("viewBox", [(-width / 2)*1.2 , (-height / 2)*1.2 , width*1.2, height*1.2])
+                .attr("style", "width:auto; height:100%; font:.4em sans-serif;");
+
+            const chords = chord(matrix);
+
+            const group = svg.append("g")
+                .selectAll()
+                .data(chords.groups)
+                .join("g");
+
+            group.append("path")
+                .attr("fill", d => colors[d.index])
+                .attr("d", arc);
+
+            group.append("text")
+                .each(d => (d.angle = (d.startAngle + d.endAngle) / 2))
+                .attr("dy", "0.35em")
+                .attr("transform", d => `
+            rotate(${(d.angle * 180 / Math.PI - 90)})
+            translate(${outerRadius + 5})
+            ${d.angle > Math.PI ? "rotate(180)" : ""}
+        `)
+                .attr("text-anchor", d => d.angle > Math.PI ? "end" : null)
+                .text(d => names[d.index]);
+
+            group.append("title")
+                .text(d => `${names[d.index]}
+                    ${d3.sum(chords, c => (c.source.index === d.index) * c.source.value)} outgoing ->
+                    ${d3.sum(chords, c => (c.target.index === d.index) * c.source.value)} incoming <-`);
+
+            svg.append("g")
+                .attr("fill-opacity", 0.75)
+                .selectAll()
+                .data(chords)
+                .join("path")
+                .style("mix-blend-mode", "multiply")
+                .attr("fill", d => colors[d.target.index])
+                .attr("d", ribbon)
+                .append("title")
+                .text(d => `${names[d.source.index]} depends on ${names[d.target.index]}`);
+
+        </script>
+
+    </body>
+</html>
